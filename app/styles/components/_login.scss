@@ -1,0 +1,25 @@
+.login {
+    padding: 1.2rem;
+    background-color: $light;
+    border-radius: 5px;
+    border: 1px solid $grey-border;
+
+    h3 {
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+        font-size: 3rem;
+        color: $grey;
+    }
+
+    p {
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+
+    .ui.primary.button {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 2rem auto;
+    }
+}
