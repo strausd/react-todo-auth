@@ -9,7 +9,7 @@ export var Todo = React.createClass({
             this.refs.completedCheckbox.checked = !this.refs.completedCheckbox.checked;
         }
         var {id, dispatch} = this.props;
-        dispatch(actions.toggleTodo(id));
+        dispatch(actions.startToggleTodo(id, this.refs.completedCheckbox.checked));
     },
     render: function () {
         var {id, text, completed, createdAt, completedAt, dispatch} = this.props;
