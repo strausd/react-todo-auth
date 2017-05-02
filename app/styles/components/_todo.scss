@@ -1,0 +1,44 @@
+.todo {
+    padding: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    .ui.checkbox {
+        label {
+            cursor: pointer;
+        }
+        label:before, label:after, input[type=checkbox] {
+            position: absolute;
+            top: 36%;
+        }
+        label:hover::before {
+            border-color: #D4D4D5;
+        }
+        p {
+            margin-bottom: 0.3rem;
+        }
+    }
+    transition: background-color .2s, color .2s;
+}
+
+.todo:hover {
+    background-color: $grey-hover;
+}
+
+.todo:active {
+    background-color: $grey-click;
+}
+
+.todo-subtext {
+    color: $faded-text;
+}
+
+.todo-completed {
+    color: $faded-text;
+    text-decoration: line-through;
+    .ui.checkbox {
+        label {
+            color: $faded-text;
+        }
+    }
+}

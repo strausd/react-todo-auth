@@ -1,0 +1,65 @@
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    #app {
+        font-size: 36px;
+        h1 {
+            font-size: 4rem;
+            padding: 2rem 0;
+        }
+        .ui.grid>[class*="twelve wide tablet"].column {
+            width: 90%!important;
+        }
+        .ui.grid>* {
+            padding-right: 0;
+        }
+        .ui.checkbox label {
+            font-size: 2.5em;
+        }
+        .ui.checkbox input[type=checkbox], .ui.checkbox label:before, .ui.checkbox label:after {
+            width: 60px;
+            height: 60px;
+            font-size: 40px;
+        }
+        .todo .ui.checkbox label:after {
+            top: 42%;
+        }
+
+        .todo-search {
+
+            .ui.checkbox input[type=checkbox] {
+                width: 130px;
+                top: 20px;
+            }
+            .ui.checkbox label:before {
+                width: 130px;
+            }
+            .ui.checkbox label {
+                padding-top: 0.55em;
+                padding-left: 11rem;
+            }
+            .ui.toggle.checkbox input:checked~.box:after, .ui.toggle.checkbox input:checked~label:after {
+                left: 5.1rem;
+            }
+
+            .ui.toggle.checkbox {
+                padding-bottom: 2.1rem;
+                padding-top: 0.4rem;
+            }
+        }
+
+        .ui.button {
+            font-size: 2.5rem;
+        }
+        .no-todos-message {
+            font-size: 2.5rem;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (min-width: 250px){
+    .main-header {
+        font-size: 3rem;
+        padding: 1rem 0;
+    }
+}

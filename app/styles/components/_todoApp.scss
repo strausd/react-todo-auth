@@ -1,0 +1,16 @@
+body {
+    font-size: 18px;
+}
+
+h1 {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-weight: 400;
+    color: $grey;
+}
+
+.ui.input input {
+    border-radius: 5px;
+}
