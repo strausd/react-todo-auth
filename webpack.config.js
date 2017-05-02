@@ -9,12 +9,12 @@ module.exports = {
         './app/app.jsx'
     ],
     externals: {
-        jquery: 'jQuery'
+        jquery: 'jquery'
     },
     plugins: [
         new webpack.ProvidePlugin({
             '$': 'jquery',
-            'jQuery': 'jquery'
+            'jQuery': 'jQuery'
         }),
         new webpack.optimize.UglifyJsPlugin({
             compressor: {
