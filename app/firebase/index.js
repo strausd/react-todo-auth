@@ -2,15 +2,16 @@ import firebase from 'firebase';
 
 try {
     var config = {
-        apiKey: "AIzaSyDMtu9FUFQTGTfkomVrHu8RtPMJk331ZIs",
-        authDomain: "straus-todo-app.firebaseapp.com",
-        databaseURL: "https://straus-todo-app.firebaseio.com",
-        projectId: "straus-todo-app",
-        storageBucket: "straus-todo-app.appspot.com",
-        messagingSenderId: "219381990702"
+        apiKey: process.env.API_KEY,
+        authDomain: process.env.AUTH_DOMAIN,
+        databaseURL: process.env.DATABASE_URL,
+        projectId: process.env.PROJECT_ID,
+        storageBucket: process.env.STORAGE_BUCKET,
+        messagingSenderId: process.env.MESSAGING_SENDER_ID
     };
     firebase.initializeApp(config);
 } catch (e) {
+    console.log(process.env.API_KEY);
     console.log('Error starting up firebase', e);
 }
 

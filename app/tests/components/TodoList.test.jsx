@@ -47,7 +47,6 @@ describe('TodoList', () => {
         var todos = [];
         var todoList = TestUtils.renderIntoDocument(<TodoList todos={todos}/>);
         var $el = $(ReactDOM.findDOMNode(todoList));
-
         expect($el.find('.no-todos-message').length).toBe(1);
     });
 });
