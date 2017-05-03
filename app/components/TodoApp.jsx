@@ -6,14 +6,18 @@ import AddTodo from 'AddTodo';
 import TodoSearch from 'TodoSearch';
 import * as actions from 'actions';
 
-export var TodoApp = React.createClass({
-    onLogout: function (e) {
+export class TodoApp extends React.Component{
+    constructor (props) {
+        super(props);
+        this.onLogout = this.onLogout.bind(this);
+    }
+    onLogout (e) {
         var {dispatch} = this.props;
         e.preventDefault();
 
         dispatch(actions.startLogout());
-    },
-    render: function () {
+    }
+    render () {
         return (
             <div className="ui stackable grid centered">
                 <div className="eight wide computer twelve wide tablet tablet sixteen wide mobile column">
@@ -28,6 +32,6 @@ export var TodoApp = React.createClass({
             </div>
         );
     }
-});
+};
 
 export default Redux.connect()(TodoApp);
